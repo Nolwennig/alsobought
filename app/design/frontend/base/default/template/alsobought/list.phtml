@@ -1,0 +1,20 @@
+<?php $_alsoBoughtList = $this->getProductsList(); ?>
+<?php if(count($_alsoBoughtList)): ?>
+	<div class="box-collateral box-alsobought">
+		<h2><?php echo $this->__('Customers who bought this also bought') ?></h2>
+		<ul class="alsobought-list">
+			<?php $counter = 1 ?>
+			<?php foreach($_alsoBoughtList as $_product): ?>
+				<li class="alsobought-item<?php echo ($counter==count($_alsoBoughtList)?' last':($counter==1?' first':'')) ?>">
+					<div class="item-container">
+						<a href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(135); ?>" alt="<?php echo $_product->getName() ?>" title="<?php echo $_product->getName() ?>" /></a>
+						<h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>"><?php echo $_product->getName() ?></a></h3>
+						<?php echo $this->getPriceHtml($_product, true, '-alsobought') ?>
+						<?php echo $this->getReviewsSummaryHtml($_product) ?>
+					</div>
+				</li>
+				<?php $counter++ ?>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+<?php endif; ?>

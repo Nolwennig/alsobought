@@ -1,0 +1,10 @@
+.box-alsobought {display: block; overflow: none; float: none;}
+.box-alsobought h2 {border-bottom: 0px; padding:0px; margin: 0px 0 8px;}
+.box-alsobought ul.alsobought-list {display: block; overflow: hidden; width: 631px; border: 1px solid #E5DCC3; clear: both;}
+.box-alsobought ul.alsobought-list li.alsobought-item {display: block; overflow: hidden; float: left; width: 25%; height: 300px; padding:0px; background: #F6F2E7; border-right: 1px solid #E5DCC3;}
+.box-alsobought ul.alsobought-list li.alsobought-item h3 a {color: #203548; font-weight: bold;}
+.box-alsobought ul.alsobought-list li.alsobought-item div.item-container {padding: 15px 10px 12px;}
+.box-alsobought ul.alsobought-list li.alsobought-item img {border: 1px solid #E5DCC3; margin: 0 0 10px 0;}
+.box-alsobought ul.alsobought-list li.alsobought-item div.ratings div.rating-box {margin-bottom: 2px;}
+.box-alsobought ul.alsobought-list li.alsobought-item div.ratings p.rating-links {clear: both;}
+.box-alsobought ul.alsobought-list li.last {border-right: 0px !important;}
